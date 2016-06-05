@@ -1,0 +1,75 @@
+Best parameter set found on development set:
+
+GradientBoostingClassifier(init=None, learning_rate=0.5, loss='deviance',
+              max_depth=3, max_features=None, max_leaf_nodes=None,
+              min_samples_leaf=1, min_samples_split=2,
+              min_weight_fraction_leaf=0.0, n_estimators=800,
+              random_state=None, subsample=1.0, verbose=0,
+              warm_start=False)
+
+Grid scores on a subset of the development set:
+
+0.989524 (+/-0.000385) for {'n_estimators': 50, 'learning_rate': 0.5, 'max_depth': 3}
+0.989548 (+/-0.000116) for {'n_estimators': 200, 'learning_rate': 0.5, 'max_depth': 3}
+0.989579 (+/-0.000078) for {'n_estimators': 400, 'learning_rate': 0.5, 'max_depth': 3}
+0.989736 (+/-0.000177) for {'n_estimators': 800, 'learning_rate': 0.5, 'max_depth': 3}
+0.989107 (+/-0.000419) for {'n_estimators': 50, 'learning_rate': 0.5, 'max_depth': 5}
+0.989493 (+/-0.000553) for {'n_estimators': 200, 'learning_rate': 0.5, 'max_depth': 5}
+0.989005 (+/-0.001728) for {'n_estimators': 400, 'learning_rate': 0.5, 'max_depth': 5}
+0.989123 (+/-0.001905) for {'n_estimators': 800, 'learning_rate': 0.5, 'max_depth': 5}
+0.989430 (+/-0.000588) for {'n_estimators': 50, 'learning_rate': 0.5, 'max_depth': 10}
+0.989697 (+/-0.000438) for {'n_estimators': 200, 'learning_rate': 0.5, 'max_depth': 10}
+0.989469 (+/-0.000602) for {'n_estimators': 400, 'learning_rate': 0.5, 'max_depth': 10}
+0.989335 (+/-0.000684) for {'n_estimators': 800, 'learning_rate': 0.5, 'max_depth': 10}
+0.987739 (+/-0.000135) for {'n_estimators': 50, 'learning_rate': 0.5, 'max_depth': 15}
+0.987786 (+/-0.000510) for {'n_estimators': 200, 'learning_rate': 0.5, 'max_depth': 15}
+0.987739 (+/-0.000635) for {'n_estimators': 400, 'learning_rate': 0.5, 'max_depth': 15}
+0.987613 (+/-0.000630) for {'n_estimators': 800, 'learning_rate': 0.5, 'max_depth': 15}
+0.988415 (+/-0.000231) for {'n_estimators': 50, 'learning_rate': 1.0, 'max_depth': 3}
+0.988203 (+/-0.000265) for {'n_estimators': 200, 'learning_rate': 1.0, 'max_depth': 3}
+0.985073 (+/-0.004182) for {'n_estimators': 400, 'learning_rate': 1.0, 'max_depth': 3}
+0.986016 (+/-0.002882) for {'n_estimators': 800, 'learning_rate': 1.0, 'max_depth': 3}
+0.986685 (+/-0.000734) for {'n_estimators': 50, 'learning_rate': 1.0, 'max_depth': 5}
+0.986465 (+/-0.000780) for {'n_estimators': 200, 'learning_rate': 1.0, 'max_depth': 5}
+0.986425 (+/-0.000759) for {'n_estimators': 400, 'learning_rate': 1.0, 'max_depth': 5}
+0.986441 (+/-0.000774) for {'n_estimators': 800, 'learning_rate': 1.0, 'max_depth': 5}
+0.987243 (+/-0.000783) for {'n_estimators': 50, 'learning_rate': 1.0, 'max_depth': 10}
+0.987275 (+/-0.000464) for {'n_estimators': 200, 'learning_rate': 1.0, 'max_depth': 10}
+0.986984 (+/-0.000502) for {'n_estimators': 400, 'learning_rate': 1.0, 'max_depth': 10}
+0.987133 (+/-0.000325) for {'n_estimators': 800, 'learning_rate': 1.0, 'max_depth': 10}
+0.986960 (+/-0.000292) for {'n_estimators': 50, 'learning_rate': 1.0, 'max_depth': 15}
+0.986952 (+/-0.000453) for {'n_estimators': 200, 'learning_rate': 1.0, 'max_depth': 15}
+0.987369 (+/-0.000414) for {'n_estimators': 400, 'learning_rate': 1.0, 'max_depth': 15}
+0.986905 (+/-0.000546) for {'n_estimators': 800, 'learning_rate': 1.0, 'max_depth': 15}
+
+With the model trained on the full development set:
+
+It scores 0.999178 on the full development set
+It scores 0.998599 on the full evaluation set
+
+Feature ranking:
+1. BDT_ln_K_min_PT (0.357951)
+2. BDT_B_s0_ln_1_minus_DIRA (0.281947)
+3. BDT_ln_K_max_PT (0.052834)
+4. BDT_phi_min_ETA (0.052373)
+5. BDT_ln_phi_1_max_PT (0.048677)
+6. BDT_K_min_ETA (0.047068)
+7. BDT_K_max_TRACK_CHI2 (0.042208)
+8. BDT_B_s0_ETA (0.020606)
+9. BDT_K_min_ProbNNk (0.018845)
+10. BDT_B_s0_ln_PT (0.013664)
+11. BDT_phi_max_ETA (0.011731)
+12. BDT_B_s0_Endvertex_Chi2_NDOF (0.010077)
+13. BDT_ln_phi_1_min_PT (0.008904)
+14. BDT_K_max_ETA (0.007924)
+15. BDT_Kminus_1_PTASY (0.007130)
+16. BDT_Kplus_1_PTASY (0.006565)
+17. BDT_Kplus_2_PTASY (0.006336)
+18. BDT_Kminus_2_PTASY (0.005160)
+
+Score on whole training sample is 0.995996791141
+Score on whole test sample is 0.990231932614
+
+Accuracy: 0.99701 (+/- 0.00088)
+Accuracy1: 0.98916 (+/- 0.00078)
+

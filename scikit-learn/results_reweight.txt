@@ -1,0 +1,72 @@
+Best parameter set found on development set:
+
+GradientBoostingClassifier(init=None, learning_rate=0.5, loss='deviance',
+              max_depth=3, max_features=None, max_leaf_nodes=None,
+              min_samples_leaf=1, min_samples_split=2,
+              min_weight_fraction_leaf=0.0, n_estimators=800,
+              random_state=None, subsample=1.0, verbose=0,
+              warm_start=False)
+Grid scores on a subset of the development set:
+
+0.989508 (+/-0.000366) for {'n_estimators': 50, 'learning_rate': 0.5, 'max_depth': 3}
+0.989508 (+/-0.000099) for {'n_estimators': 200, 'learning_rate': 0.5, 'max_depth': 3}
+0.989595 (+/-0.000070) for {'n_estimators': 400, 'learning_rate': 0.5, 'max_depth': 3}
+0.989744 (+/-0.000206) for {'n_estimators': 800, 'learning_rate': 0.5, 'max_depth': 3}
+0.989107 (+/-0.000398) for {'n_estimators': 50, 'learning_rate': 0.5, 'max_depth': 5}
+0.989611 (+/-0.000591) for {'n_estimators': 200, 'learning_rate': 0.5, 'max_depth': 5}
+0.989060 (+/-0.001766) for {'n_estimators': 400, 'learning_rate': 0.5, 'max_depth': 5}
+0.989068 (+/-0.001864) for {'n_estimators': 800, 'learning_rate': 0.5, 'max_depth': 5}
+0.988926 (+/-0.000495) for {'n_estimators': 50, 'learning_rate': 0.5, 'max_depth': 10}
+0.989162 (+/-0.000623) for {'n_estimators': 200, 'learning_rate': 0.5, 'max_depth': 10}
+0.989398 (+/-0.000675) for {'n_estimators': 400, 'learning_rate': 0.5, 'max_depth': 10}
+0.989438 (+/-0.000397) for {'n_estimators': 800, 'learning_rate': 0.5, 'max_depth': 10}
+0.987904 (+/-0.000271) for {'n_estimators': 50, 'learning_rate': 0.5, 'max_depth': 15}
+0.987581 (+/-0.000254) for {'n_estimators': 200, 'learning_rate': 0.5, 'max_depth': 15}
+0.987865 (+/-0.000572) for {'n_estimators': 400, 'learning_rate': 0.5, 'max_depth': 15}
+0.987770 (+/-0.000566) for {'n_estimators': 800, 'learning_rate': 0.5, 'max_depth': 15}
+0.988399 (+/-0.000232) for {'n_estimators': 50, 'learning_rate': 1.0, 'max_depth': 3}
+0.988258 (+/-0.000277) for {'n_estimators': 200, 'learning_rate': 1.0, 'max_depth': 3}
+0.985104 (+/-0.004202) for {'n_estimators': 400, 'learning_rate': 1.0, 'max_depth': 3}
+0.985993 (+/-0.002887) for {'n_estimators': 800, 'learning_rate': 1.0, 'max_depth': 3}
+0.986756 (+/-0.000787) for {'n_estimators': 50, 'learning_rate': 1.0, 'max_depth': 5}
+0.986386 (+/-0.000689) for {'n_estimators': 200, 'learning_rate': 1.0, 'max_depth': 5}
+0.986433 (+/-0.000831) for {'n_estimators': 400, 'learning_rate': 1.0, 'max_depth': 5}
+0.986417 (+/-0.000811) for {'n_estimators': 800, 'learning_rate': 1.0, 'max_depth': 5}
+0.987188 (+/-0.000215) for {'n_estimators': 50, 'learning_rate': 1.0, 'max_depth': 10}
+0.987511 (+/-0.000462) for {'n_estimators': 200, 'learning_rate': 1.0, 'max_depth': 10}
+0.987204 (+/-0.000484) for {'n_estimators': 400, 'learning_rate': 1.0, 'max_depth': 10}
+0.986960 (+/-0.000699) for {'n_estimators': 800, 'learning_rate': 1.0, 'max_depth': 10}
+0.987102 (+/-0.000262) for {'n_estimators': 50, 'learning_rate': 1.0, 'max_depth': 15}
+0.987125 (+/-0.000521) for {'n_estimators': 200, 'learning_rate': 1.0, 'max_depth': 15}
+0.987086 (+/-0.000582) for {'n_estimators': 400, 'learning_rate': 1.0, 'max_depth': 15}
+0.987275 (+/-0.000318) for {'n_estimators': 800, 'learning_rate': 1.0, 'max_depth': 15}
+With the model trained on the full development set:
+
+  It scores 0.999150 on the full development set
+  It scores 0.998495 on the full evaluation set
+
+Feature ranking:
+1. BDT_ln_K_min_PT (0.371737)
+2. BDT_B_s0_ln_1_minus_DIRA (0.280133)
+3. BDT_ln_K_max_PT (0.053188)
+4. BDT_ln_phi_1_max_PT (0.048015)
+5. BDT_phi_min_ETA (0.045484)
+6. BDT_K_max_TRACK_CHI2 (0.044131)
+7. BDT_K_min_ETA (0.040180)
+8. BDT_B_s0_ETA (0.020137)
+9. BDT_K_min_ProbNNk (0.018293)
+10. BDT_B_s0_ln_PT (0.014377)
+11. BDT_B_s0_Endvertex_Chi2_NDOF (0.012163)
+12. BDT_phi_max_ETA (0.011183)
+13. BDT_ln_phi_1_min_PT (0.008417)
+14. BDT_Kminus_1_PTASY (0.008099)
+15. BDT_K_max_ETA (0.007509)
+16. BDT_Kplus_1_PTASY (0.006138)
+17. BDT_Kminus_2_PTASY (0.005861)
+18. BDT_Kplus_2_PTASY (0.004953)
+Wed Aug 12 09:39:38 2015 Making Predictions
+Score on whole training sample is 0.995996791141
+Score on whole test sample is 0.99025552698
+
+Accuracy: 0.99693 (+/- 0.00087)
+Accuracy1: 0.98912 (+/- 0.00077)
